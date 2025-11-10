@@ -7123,26 +7123,6 @@ const medicines = [
                                            prescriptionRequired: true,
                                            composition: ["Diclofenac Sodium 75 mg"]
                                          },
-
-                                         {
-                                           name: "Voveran SR Injection",
-                                           generic: "Diclofenac Sodium (Sustained Release)",
-                                           strength: "75 mg/3ml",
-                                           form: "Injection",
-                                           indications: ["Postoperative pain", "Arthritis", "Muscle pain"],
-                                           benefits: ["Long-lasting pain relief with sustained action."],
-                                           dosage: "Administered intramuscularly as prescribed.",
-                                           contraindications: ["Peptic ulcer", "Liver disease"],
-                                           sideEffects: ["Pain at injection site", "Nausea"],
-                                           interactions: ["Avoid alcohol."],
-                                           pregnancyAdvice: "Not recommended during pregnancy.",
-                                           storage: "Store below 25°C.",
-                                           price: "₹40 per ampoule",
-                                           packSize: "3ml",
-                                           prescriptionRequired: true,
-                                           composition: ["Diclofenac Sodium 75 mg (SR)"]
-                                         },
-
                                          {
                                            name: "Dynapar AQ Injection",
                                            generic: "Diclofenac Sodium",
