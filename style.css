@@ -1,0 +1,262 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #111;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  padding: 20px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.meta {
+  color: #666;
+  font-size: 13px;
+}
+
+.search-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="search"] {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #d6dbe8;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02) inset;
+}
+
+.results-count {
+  margin: 8px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e6e9f2;
+  box-shadow: 0 4px 10px rgba(13, 19, 40, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13, 19, 40, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.generic {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #dbeafe;
+  background: #f0f9ff;
+  color: #035388;
+}
+
+.small {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+button.details {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 0;
+  background: #1f6feb;
+  color: white;
+  cursor: pointer;
+}
+button.details:hover {
+  background: #155cc5;
+}
+
+.no-results {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px dashed #e3e8ff;
+  color: #444;
+  text-align: center;
+}
+
+/* === Overlay / Details Panel === */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  z-index: 50;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+.panel {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 24px 20px 30px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideUp 0.25s ease;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.panel h2 {
+  font-size: 22px;
+  margin: 0;
+  color: #111827;
+}
+
+.panel small {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.panel-section {
+  margin-top: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f1f5;
+}
+
+.panel-section:last-child {
+  border-bottom: none;
+}
+
+.panel-section h4 {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.panel-section p,
+.panel-section ul {
+  margin: 0;
+  color: #374151;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.panel-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.close {
+  background: #f3f4f6;
+  border: none;
+  font-size: 20px;
+  color: #111;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover {
+  background: #e5e7eb;
+}
+
+.panel-meta {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.price-tag {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rx-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
