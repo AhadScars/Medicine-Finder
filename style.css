@@ -288,8 +288,43 @@ button.details:hover {
   margin-left: 6px;
 }
 
+#visit-counter {
+  position: fixed;
+  bottom: 20px; /* Adjust this to move the counter up/down */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 9999;
+  padding: 10px;
+  width: auto;
+    max-width: 90%; /* Ensure it's not too wide on smaller screens */
+    font-size: 14px;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 560px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #visit-counter {
+    bottom: 15px;  /* Slightly move it up for smaller screens */
+    font-size: 12px; /* Smaller font size on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  #visit-counter {
+    bottom: 10px;  /* Move it up a little more on very small screens */
+    font-size: 12px;
+    padding: 8px;  /* Less padding for smaller devices */
   }
 }
