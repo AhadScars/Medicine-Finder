@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,35 +7,49 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>💊 Medicine Finder</h1>
-      <div class="meta">Search by brand name, generic, or use (e.g., "fever", "pain")</div>
-    </header>
+<div class="container">
 
-    <div class="search-wrap">
-      <input id="search" type="search" placeholder="Search medicine name, generic, use..." aria-label="Search medicines" />
-      <div style="min-width:120px;text-align:right">
-        <div class="meta" id="resultMeta">Start typing...</div>
-      </div>
-    </div>
+  <!-- Header -->
+  <header>
+    <h1>💊 Medicine Finder</h1>
+    <div class="meta">Search by brand name, generic, or use (e.g., "fever", "pain")</div>
 
-    <div id="count" class="results-count"></div>
-    <div id="results" class="grid" aria-live="polite"></div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutindex.html">About</a>
+    </nav>
+  </header>
 
-    <div id="noResults" class="no-results" style="display:none;margin-top:12px;">
-      ❌ Koi result nahi mila.<br />Try generic name, less characters (e.g., "parac"), or general use like "fever".
-    </div>
-  </div>
-
-  <!-- Overlay / Details Panel -->
-  <div id="overlay" class="overlay" role="dialog" aria-modal="true">
-    <div class="panel" id="panel">
-      <button class="close" id="closeBtn" aria-label="Close dialog">&times;</button>
-      <div id="panelContent"></div>
+  <!-- Search Section -->
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Search medicine name, generic, use..." aria-label="Search medicines" />
+    <div style="min-width:120px;text-align:right">
+      <div class="meta" id="resultMeta">Start typing...</div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <div id="count" class="results-count"></div>
+  <div id="results" class="grid" aria-live="polite"></div>
+
+  <div id="noResults" class="no-results" style="display:none;margin-top:12px;">
+    ❌ No results found.<br />Try generic name, fewer characters (e.g., "parac"), or general use like "fever".
+  </div>
+</div>
+
+<!-- Overlay / Details Panel -->
+<div id="overlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="panel" id="panel">
+    <button class="close" id="closeBtn" aria-label="Close dialog">&times;</button>
+    <div id="panelContent"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Medicine Finder. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
