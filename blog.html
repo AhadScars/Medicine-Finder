@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Health Blog — Medicine Finder</title>
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <h1>🩺 Health Blog</h1>
+    <div class="meta">Read simple, verified health tips & guides</div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html" class="active">Health Blog</a>
+      <a href="aboutindex.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Blog Search -->
+  <div class="search-wrap">
+    <input id="searchBlog" type="search" placeholder="Search health topics (e.g., fever, diet, sleep...)" aria-label="Search blogs" />
+    <div style="min-width:120px;text-align:right">
+      <div class="meta" id="blogMeta">Start typing...</div>
+    </div>
+  </div>
+
+  <div id="blogCount" class="results-count"></div>
+  <div id="blogList" class="grid" aria-live="polite"></div>
+
+  <div id="noBlogs" class="no-results" style="display:none;margin-top:12px;">
+    ❌ No blogs found.<br />Try searching with simpler keywords (e.g., "sleep", "diet", "fever").
+  </div>
+</div>
+
+<!-- Overlay / Blog Details Panel -->
+<div id="blogOverlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="panel" id="blogPanel">
+    <button class="close" id="closeBlogBtn" aria-label="Close dialog">&times;</button>
+    <div id="blogContent"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Medicine Finder — Health Blog Section.</p>
+</footer>
+
+<script src="blog.js"></script>
+</body>
+</html>

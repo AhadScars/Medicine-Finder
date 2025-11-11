@@ -1,7 +1,6 @@
-const medicines = [
-
-
-           {
+const medicines =
+ [
+         {
              name: "Dolo 650 Tablet",
              generic: "Paracetamol",
              strength: "650 mg",
@@ -6800,27 +6799,7 @@ const medicines = [
                                        prescriptionRequired: true,
                                        composition: ["Ceftazidime 1 g", "Tazobactam 125 mg"]
                                      },
-
-                                       {
-                                         name: "Voveran Injection",
-                                         generic: "Diclofenac Sodium",
-                                         strength: "75 mg/3ml",
-                                         form: "Injection",
-                                         indications: ["Pain relief", "Inflammation", "Arthritis"],
-                                         benefits: ["Provides fast relief from pain and inflammation."],
-                                         dosage: "Administered intramuscularly by healthcare professional.",
-                                         contraindications: ["Ulcers", "Kidney disease", "Asthma"],
-                                         sideEffects: ["Pain at injection site", "Nausea", "Stomach upset"],
-                                         interactions: ["Avoid alcohol and anticoagulants."],
-                                         pregnancyAdvice: "Avoid during pregnancy unless prescribed.",
-                                         storage: "Store below 25°C.",
-                                         price: "₹35 per ampoule",
-                                         packSize: "3ml ampoule",
-                                         prescriptionRequired: true,
-                                         composition: ["Diclofenac Sodium 75 mg"]
-                                       },
-
-                                       {
+                                     {
                                          name: "Voveran SR Injection",
                                          generic: "Diclofenac Sodium (Sustained Release)",
                                          strength: "75 mg/3ml",
@@ -6838,26 +6817,6 @@ const medicines = [
                                          prescriptionRequired: true,
                                          composition: ["Diclofenac Sodium 75 mg (SR)"]
                                        },
-
-                                       {
-                                         name: "Dynapar AQ Injection",
-                                         generic: "Diclofenac Sodium",
-                                         strength: "75 mg/3ml",
-                                         form: "Injection",
-                                         indications: ["Pain", "Inflammation", "Muscle pain"],
-                                         benefits: ["Quick pain relief and reduced inflammation."],
-                                         dosage: "Administered by healthcare professional.",
-                                         contraindications: ["Peptic ulcer", "Kidney disease"],
-                                         sideEffects: ["Pain at site", "Heartburn"],
-                                         interactions: ["Avoid alcohol and NSAIDs."],
-                                         pregnancyAdvice: "Avoid during late pregnancy.",
-                                         storage: "Store below 25°C.",
-                                         price: "₹38 per ampoule",
-                                         packSize: "3ml",
-                                         prescriptionRequired: true,
-                                         composition: ["Diclofenac Sodium 75 mg"]
-                                       },
-
                                        {
                                          name: "Dicloran Injection",
                                          generic: "Diclofenac Sodium",
@@ -7141,26 +7100,6 @@ const medicines = [
                                            prescriptionRequired: true,
                                            composition: ["Diclofenac Sodium 75 mg"]
                                          },
-
-                                         {
-                                           name: "Dicloran Injection",
-                                           generic: "Diclofenac Sodium",
-                                           strength: "75 mg/3ml",
-                                           form: "Injection",
-                                           indications: ["Pain", "Inflammation"],
-                                           benefits: ["Fast-acting pain relief in arthritis and injuries."],
-                                           dosage: "Given IM under medical supervision.",
-                                           contraindications: ["Ulcer", "Asthma", "Heart disease"],
-                                           sideEffects: ["Pain", "Nausea"],
-                                           interactions: ["Avoid alcohol."],
-                                           pregnancyAdvice: "Not safe during pregnancy.",
-                                           storage: "Store below 25°C.",
-                                           price: "₹35 per ampoule",
-                                           packSize: "3ml",
-                                           prescriptionRequired: true,
-                                           composition: ["Diclofenac Sodium 75 mg"]
-                                         },
-
                                          {
                                            name: "Zerodol SP Injection",
                                            generic: "Aceclofenac + Paracetamol + Serratiopeptidase",
@@ -7198,26 +7137,6 @@ const medicines = [
                                            prescriptionRequired: true,
                                            composition: ["Aceclofenac 150 mg"]
                                          },
-
-                                         {
-                                           name: "Dolonex Injection",
-                                           generic: "Piroxicam",
-                                           strength: "20 mg/ml",
-                                           form: "Injection",
-                                           indications: ["Arthritis", "Pain", "Inflammation"],
-                                           benefits: ["Provides relief from inflammation and joint pain."],
-                                           dosage: "IM injection as prescribed.",
-                                           contraindications: ["Ulcers", "Heart disease"],
-                                           sideEffects: ["Pain", "Dizziness"],
-                                           interactions: ["Avoid alcohol."],
-                                           pregnancyAdvice: "Avoid during pregnancy.",
-                                           storage: "Store below 25°C.",
-                                           price: "₹50 per ampoule",
-                                           packSize: "1ml",
-                                           prescriptionRequired: true,
-                                           composition: ["Piroxicam 20 mg/ml"]
-                                         },
-
                                          {
                                            name: "Etoshine Injection",
                                            generic: "Etoricoxib",
@@ -7805,24 +7724,6 @@ const medicines = [
                                         composition: ["Norepinephrine 1 mg/ml"]
                                       },
                                       {
-                                        name: "Dopamine Injection",
-                                        generic: "Dopamine Hydrochloride",
-                                        strength: "200 mg/5 ml",
-                                        form: "Injection (Infusion)",
-                                        indications: ["Shock", "Heart failure"],
-                                        benefits: ["Improves cardiac output and maintains perfusion."],
-                                        dosage: "IV infusion with monitoring.",
-                                        contraindications: ["Tachyarrhythmia"],
-                                        sideEffects: ["Headache", "Palpitations"],
-                                        interactions: ["MAO inhibitors"],
-                                        pregnancyAdvice: "Use under strict supervision.",
-                                        storage: "Store below 25°C.",
-                                        price: "₹45 per ampoule",
-                                        packSize: "5 ml",
-                                        prescriptionRequired: true,
-                                        composition: ["Dopamine Hydrochloride 200 mg/5 ml"]
-                                      },
-                                      {
                                         name: "Dobutamine Injection",
                                         generic: "Dobutamine",
                                         strength: "250 mg/5 ml",
@@ -8060,29 +7961,25 @@ const medicines = [
                                         prescriptionRequired: true,
                                         composition: ["Ranitidine Hydrochloride 25 mg/ml"]
                                       },
-                                      {
-                                        name: "Ondem IV",
-                                        generic: "Ondansetron",
-                                        strength: "2 mg/ml",
-                                        form: "Injection",
-                                        indications: ["Nausea", "Vomiting"],
-                                        benefits: ["Effective antiemetic for postoperative nausea."],
-                                        dosage: "IV slow injection or infusion as prescribed.",
-                                        contraindications: ["Hypersensitivity"],
-                                        sideEffects: ["Headache", "Constipation"],
-                                        interactions: ["Avoid with serotonin-acting drugs."],
-                                        pregnancyAdvice: "Safe under medical supervision.",
-                                        storage: "Store below 25°C.",
-                                        price: "₹35 per ampoule",
-                                        packSize: "2 ml",
-                                        prescriptionRequired: true,
-                                        composition: ["Ondansetron 2 mg/ml"]
-                                      }
-
-
-
-
-                                   ];
+           {
+             name: "Ondem IV",
+             generic: "Ondansetron",
+             strength: "2 mg/ml",
+             form: "Injection",
+             indications: ["Nausea", "Vomiting"],
+             benefits: ["Effective antiemetic for postoperative nausea."],
+             dosage: "IV slow injection or infusion as prescribed.",
+             contraindications: ["Hypersensitivity"],
+             sideEffects: ["Headache", "Constipation"],
+             interactions: ["Avoid with serotonin-acting drugs."],
+             pregnancyAdvice: "Safe under medical supervision.",
+             storage: "Store below 25°C.",
+             price: "₹35 per ampoule",
+             packSize: "2 ml",
+             prescriptionRequired: true,
+             composition: ["Ondansetron 2 mg/ml"]
+         }
+ ];
 
 // === Utility Functions ===
 function highlightMatch(text, q) {
